@@ -1,0 +1,20 @@
+config_cifar10 = {'verbose': True, 'save_every_epoch': 1, 'print_every': 1000, 'plot_num_pics': 100,
+                  'plot_num_cols': 10, 'adam_beta1': 0.5, 'lr': 5e-5, 'lr_schedule': 'manual_smooth', 'batch_size': 40,
+                  'epoch_num': 50, 'init_std': 0.0099999, 'init_bias': 0.0, 'batch_norm': True, 'batch_norm_eps': 1e-05,
+                  'batch_norm_decay': 0.9, 'conv_filters_dim': 5, 'e_pretrain': True, 'e_pretrain_sample_size': 256,
+                  'e_noise': 'gaussian', 'e_num_filters': 1024, 'e_num_layers': 4, 'g_num_filters': 1024,
+                  'g_num_layers': 4, 'd_num_layers': 4, 'd_num_filters': 1024, 'zdim': 64, 'pz': 'normal',
+                  'cost': 'l2sq', 'pz_scale': 1., 'mmd_kernel': 'IMQ', 'lambda': 1., 'lambda_cls': 10.,
+                  'lambda_mixture': 0.0001, 'n_classes': 10, 'hdim': 2 * 2 * 1024, 'augment_z': True,
+                  'augment_x': False, 'LVO': False, 'eval_strategy': 2, 'aug_rate': 0.6, 'mlp_classifier': False,
+                  'sampling_size': 10, 'dataset': 'cifar10'}
+
+config_mnist = {'dataset': 'mnist', 'verbose': True, 'save_every_epoch': 1, 'print_every': 100, 'plot_num_pics': 400,
+                'plot_num_cols': 20, 'adam_beta1': 0.5, 'lr': 1e-5, 'lr_schedule': 'manual', 'batch_size': 100,
+                'epoch_num': 50, 'init_std': 0.0099999, 'init_bias': 0.0, 'batch_norm': True, 'batch_norm_eps': 1e-05,
+                'batch_norm_decay': 0.9, 'conv_filters_dim': 4, 'e_pretrain': True, 'e_pretrain_sample_size': 1000,
+                'e_noise': 'gaussian', 'e_num_filters': 1024, 'e_num_layers': 4, 'g_num_filters': 1024,
+                'g_num_layers': 3, 'd_num_filters': 512, 'd_num_layers': 4, 'zdim': 64, 'pz': 'normal', 'cost': 'l2sq',
+                'pz_scale': 1., 'mmd_kernel': 'IMQ', 'lambda': 1., 'lambda_cls': 10., 'lambda_mixture': 0.0001,
+                'n_classes': 10, 'hdim': 2 * 2 * 1024, 'mlp_classifier': False, 'eval_strategy': 1, 'sampling_size': 10,
+                'augment_z': True, 'augment_x': False, 'aug_rate': 0.5, 'LVO': True}
